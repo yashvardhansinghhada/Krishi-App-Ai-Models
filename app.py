@@ -30,7 +30,7 @@ def map_grade_to_score(df):
 @app.route('/api/crop-production', methods=['POST'])
 def crop_production():
     try:
-        with open("compressed_crop_produciton_model.pkl", "rb") as f:
+        with open("compressed_crop_produciton_model3.pkl", "rb") as f:
             production = joblib.load(f)
 
         data = request.get_json()
